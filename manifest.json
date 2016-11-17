@@ -1,6 +1,6 @@
 {
     "name": "weibo optimization",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "manifest_version": 2,
     "description": "为了不让微博的PM喂我吃屎而做的优化工具",
     "icons": {
