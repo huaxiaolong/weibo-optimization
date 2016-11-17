@@ -14,4 +14,12 @@ function replace_nickname_hotfeed_href() {
     });
 }
 
+// 干掉图书排行榜
+function kill_rightmod_rank() {
+    $("#plc_frame").bind('DOMNodeInserted', function(e){
+        $('#v6_pl_rightmod_rank').remove();
+    });
+}
+
 replace_nickname_hotfeed_href();
+kill_rightmod_rank();
