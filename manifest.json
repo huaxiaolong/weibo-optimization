@@ -9,21 +9,22 @@
     },
     "browser_action": {
         "default_title": "微博优化器",
-        "default_icon": "image/icon32.png"
+        "default_icon": "image/icon16.png"
     },
     "author": "huaxiaolong",
     "content_scripts": [
         {
-          "js": ["script/lib/jquery-1.11.3.min.js", "script/index.js"],
-          "matches": [
-            "http://weibo.com/*",
-            "https://weibo.com/*"
-          ],
-          "run_at": "document_end"
+            "js": [
+                "script/lib/jquery-1.11.3.min.js",
+                "script/index.js"
+            ],
+            "matches": [
+                "*://weibo.com/*"
+            ],
+            "run_at": "document_end"
         }
     ],
     "permissions": [
-        "http://*/*",
-        "https://*/*"
+        "*://weibo.com/*"
     ]
 }
